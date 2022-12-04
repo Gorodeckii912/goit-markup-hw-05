@@ -44,22 +44,20 @@
             </li>
           </ul>
           <div>
-            <ul class="logonavflex ">
-              <li class="mit ulstyle ">
-                
-                <a href="mailto:info@devstudio.com" class="mit mailmargin "
+            <ul class="logonavflex">
+              <li class="mit ulstyle">
+                <a href="mailto:info@devstudio.com" class="mit mailmargin"
                   ><svg width="16" height="12" href="" class="special-svg">
-                    <use href="./images/icons.svg#icon-envelope"></use>
-                  </svg>info@devstudio.com</a>
-                
+                    <use href="./images/icons.svg#icon-envelope"></use></svg>
+                  info@devstudio.com</a
+                >
               </li>
-              <li class="mit ulstyle ">
-                
-                <a href="tel:+380961111111" class="mit "
+              <li class="mit ulstyle">
+                <a href="tel:+380961111111" class="mit"
                   ><svg width="12" height="16" href="#" class="special-svg">
-                    <use href="./images/icons.svg#icon-smartphone"></use>
-                  </svg>+38 096 111 11 11</a>
-                
+                    <use href="./images/icons.svg#icon-smartphone"></use></svg>
+                  +38 096 111 11 11</a
+                >
               </li>
             </ul>
           </div>
@@ -74,7 +72,7 @@
       <section class="section WS0">
         <div class="container">
           <h1 class="HERO">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="Hbutton">Замовити послугу</button>
+          <button type="button" class="Hbutton" data-modal-open>Замовити послугу</button>
         </div>
       </section>
       <!-- section1---------------------------- -->
@@ -150,31 +148,36 @@
           <ul class="ulstyle">
             <li class="WW">
               <div class="sec2position">
-              <img
-                src="images2/11.jpg"
-                alt="printing"
-                width="370"
-                height="294"
-              />
-            <p class="sec2-text-in"> Десктопні додатки</p></div>
+                <img
+                  src="images2/11.jpg"
+                  alt="printing"
+                  width="370"
+                  height="294"
+                />
+                <p class="sec2-text-in">Десктопні додатки</p>
+              </div>
             </li>
             <li class="WW">
               <div class="sec2position">
-              <img
-                src="images2/22.jpg"
-                alt="looking"
-                width="370"
-                height="294"
-              /><p class="sec2-text-in"> Мобільні додатки</p></div>
+                <img
+                  src="images2/22.jpg"
+                  alt="looking"
+                  width="370"
+                  height="294"
+                />
+                <p class="sec2-text-in">Мобільні додатки</p>
+              </div>
             </li>
             <li>
               <div class="sec2position">
-              <img
-                src="images2/33.jpg"
-                alt="drawing"
-                width="370"
-                height="294"
-              /><p class="sec2-text-in"> Дизайнерські рішення</p></div>
+                <img
+                  src="images2/33.jpg"
+                  alt="drawing"
+                  width="370"
+                  height="294"
+                />
+                <p class="sec2-text-in">Дизайнерські рішення</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -477,5 +480,17 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close" data-modal-close>
+          <svg width="11" height="11" class="">
+            <use href="./svg/icon2.svg#icon-Vector"></use>
+          </svg>
+          </svg>
+         
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
