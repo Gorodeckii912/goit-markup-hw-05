@@ -28,7 +28,6 @@
   /* Icons------------- */
   --icons: #afb1b8;
 
-
   /* time -cubik-background-----  ВРЕМЯ АНИМАЦИЙ---- */
   --Cubik: cubic-bezier(0.4, 0, 0.2, 1);
   --time-trans: 2500ms;
@@ -165,14 +164,12 @@ header .container {
   fill: currentColor;
   margin-right: 10px;
   cursor: pointer;
-  
 }
-.special-svg:hover
- {
-  fill:var(--link-active-color);
+.special-svg:hover {
+  fill: var(--link-active-color);
 }
 .special-svg:focus {
-  fill:var(--link-active-color);
+  fill: var(--link-active-color);
 }
 .mailmargin {
   margin-right: 30px;
@@ -289,7 +286,8 @@ header .container {
   transition: var(--time-trans);
   transition-timing-function: var(--Cubik);
 }
-.MiT:hover, .MiT:focus {
+.MiT:hover,
+.MiT:focus {
   color: var(--link-active-color);
 }
 .teldown {
@@ -426,6 +424,20 @@ header .container {
   padding: 0 400px 0 400px;
 }
 
+.sec2position { position: relative;}
+.sec2-text-in {position: absolute;
+bottom: 0;
+width: 370px;
+height: 70px;
+color: #ffffff;
+background: rgba(47, 48, 58, 0.8);
+text-transform: uppercase;
+font-size: 14px;
+line-height: 1.14x;
+text-align: center;
+letter-spacing: 0.03em;
+padding: 27px 95px;}
+
 /* section 3------------------------------ */
 /* WS3h2 - Webstudio section 3 h3 */
 /* WS3h3 - Webstudio section 3 h3 */
@@ -560,14 +572,12 @@ header .container {
   background-color: #fff;
   justify-content: center;
   align-items: center;
-  
 }
 
 .Clients-svg {
   fill: #afb1b8;
-  transition:var(--time-trans) ;
+  transition: var(--time-trans);
   transition-timing-function: var(--Cubik);
-  
 }
 .Clients:hover .Clients-svg,
 .Clients:focus .Clients-svg {
@@ -635,6 +645,31 @@ header .container {
   background: #ffffff;
   border: 1px solid #eeeeee;
   padding: 20px;
+}
+.imgposition {
+  position: relative;
+  overflow: hidden;
+  
+}
+.imgposition:hover .text-hidden,
+.imgposition:focus .text-hidden {
+  transform: translateY(0);
+}
+.text-hidden {
+  position: absolute;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  background-color: rgba(33, 150, 243, 0.9);
+  padding: 63px 24px;
+  top: 0;
+
+  transform: translateY(100%);
+  transition: transform var(--time-trans) var(--Cubik);
+  
 }
 
 .img1 {
